@@ -3,6 +3,10 @@ const app = express();
 const path = require("path");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
+const morgan = require("morgan");
+const ejsMate = require("ejs-mate");
+
+app.use(morgan("tiny"));
 
 const Campground = require("./models/campground");
 
@@ -14,6 +18,7 @@ db.once("opem", () => {
   console.log("Database connected");
 });
 
+app.engine("ejs", ejsMate);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
