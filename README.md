@@ -1,10 +1,6 @@
 # YelpCamp
 
-<a href="https://yelp-camp-2022-grounds.herokuapp.com/">
- <p align="center">
-  <img src="https://flic.kr/ps/3YCdZf?w=350" alt="Campground"
- </p>
-</a>
+This project is deployed on Heroku: https://yelp-camp-2022-grounds.herokuapp.com/
 
 YelpCamp is a platform where users can create and post reviews to campgrounds. This project is refered from Colt Steele's web dev course on udemy.
 
